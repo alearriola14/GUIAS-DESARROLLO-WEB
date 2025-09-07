@@ -1,9 +1,8 @@
-/* Estilos de fuente y color usando Google Fonts */
-.body {
+body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9fafb; /* Color de fondo más suave */
-    color: #2c3e59; /* Color de texto principal más oscuro */
-    line-height: 1.6; /* Mejorando la legibilidad con mayor interlineado */
+    background-color: #f9fafb;
+    color: #2c3e59;
+    line-height: 1.6;
 }
 
  .main-title {
@@ -42,15 +41,16 @@
     margin: 0 auto; /* Centrando las imágenes */
 }
 
-country-section h3 {
-    color: #e74c3c; /* Rojo vibrante para los nombres de los países */
-    font-size: 1.8em; /* Tamaño de fuente más grande para los títulos de los países */
-    margin-bottom: 5px; /* Espacio inferior para separar del texto */
+article h3 {
+    color: #e74c3c;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    
 }
 
-country-section p {
+article p {
     font-size: 1em;
-    color: #2c3e50; 
+    color: #2c3e50;
     width: 80%;
     margin: 0 auto 20px auto; /* Centrando los párrafos y añadiendo margen inferior */
     text-align: justify; /* Justificar el texto para un aspecto más limpio */

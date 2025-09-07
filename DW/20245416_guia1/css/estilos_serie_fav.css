@@ -1,12 +1,8 @@
-/* HOJA DE ESTILOS EXTERNA - THE MIDNIGHT GOSPEL */
-
-/* Reset y configuración base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -14,23 +10,10 @@ body {
     color: #ffffff;
     overflow-x: hidden;
 }
-
-/* Header simplificado */
 .header-principal {
     background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
-    background-size: 300% 300%;
-    animation: gradientShift 8s ease infinite;
     min-height: 100vh;
-    position: relative;
 }
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
-
-/* Hero section */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -40,61 +23,41 @@ body {
     text-align: center;
     padding: 2rem;
 }
-
 .titulo-principal {
     font-size: 4rem;
     margin-bottom: 1rem;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
-    animation: pulse 3s ease-in-out infinite alternate;
 }
-
-@keyframes pulse {
-    from { transform: scale(1); }
-    to { transform: scale(1.05); }
-}
-
 .subtitulo {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     opacity: 0.9;
 }
-
-/* Imágenes simplificadas */
 .imagen-principal, 
 .imagen-simple {
     width: 100%;
-    height: 250px;
+    height: 350px;
     background: linear-gradient(45deg, #ff9a56, #ff6b9d);
     border-radius: 10px;
     object-fit: cover;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     display: block;
 }
-
 .imagen-principal {
-    height: 300px;
-    max-width: 500px;
+    height: 450px;
+    max-width: 700px;
 }
-
-/* Contenido principal */
 .contenido-principal {
     background: linear-gradient(180deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
     padding: 4rem 2rem;
 }
-
 .titulo-seccion {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #f39c12;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #f39c12;    
 }
-
-/* Sección sinopsis */
 .seccion-sinopsis {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
 }
-
 .contenido-sinopsis {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -103,23 +66,18 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .parrafo-destacado {
     font-size: 1.3rem;
     color: #3498db;
     font-weight: bold;
 }
-
 .texto-sinopsis p {
     font-size: 1.1rem;
     text-align: justify;
 }
-
-/* Personajes */
 .seccion-personajes {
     margin-bottom: 6rem;
 }
-
 .grid-personajes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -127,20 +85,13 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .tarjeta-personaje {
     background: linear-gradient(135deg, #667eea, #764ba2);
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
-    transition: transform 0.3s ease;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-
-.tarjeta-personaje:hover {
-    transform: translateY(-10px);
-}
-
 #clancy {
     background: linear-gradient(135deg, #ff6b6b, #ee5a24);
 }
@@ -148,18 +99,14 @@ body {
 #charlotte {
     background: linear-gradient(135deg, #4ecdc4, #44a08d);
 }
-
 .nombre-personaje {
     color: #ffffff;
     margin: 1rem 0;
     font-size: 1.5rem;
 }
-
-/* Galería simplificada */
 .seccion-galeria {
     margin-bottom: 6rem;
 }
-
 .grid-galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -167,8 +114,6 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-
-/* Cita destacada */
 .seccion-cita {
     text-align: center;
     margin-bottom: 4rem;
@@ -178,25 +123,20 @@ body {
     max-width: 800px;
     margin: 0 auto 6rem;
 }
-
 .cita-destacada {
     font-size: 1.8rem;
     font-style: italic;
 }
-
 .cita-destacada cite {
     display: block;
     margin-top: 1rem;
     font-size: 1rem;
     opacity: 0.8;
 }
-
-/* Footer */
 .pie-pagina {
     background: linear-gradient(135deg, #1e3c72, #2a5298);
     padding: 3rem 2rem 1rem;
 }
-
 .contenido-footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -204,25 +144,10 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .contenido-footer h3 {
     color: #f39c12;
     margin-bottom: 1rem;
 }
-
-.enlaces-relacionados ul {
-    list-style: none;
-}
-
-.enlaces-relacionados a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.enlaces-relacionados a:hover {
-    color: #ffffff;
-}
-
 .copyright {
     text-align: center;
     margin-top: 2rem;
@@ -230,8 +155,6 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     opacity: 0.7;
 }
-
-/* Responsividad */
 @media (max-width: 768px) {
     .titulo-principal {
         font-size: 2.5rem;
@@ -244,5 +167,13 @@ body {
 
     .grid-galeria {
         grid-template-columns: 1fr;
+    }
+    .imagen-principal {
+        height: 350px;
+        max-width: 100%;
+    }
+    
+    .imagen-simple {
+        height: 300px;
     }
 }

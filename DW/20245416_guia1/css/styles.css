@@ -1,12 +1,11 @@
-/* Estilos de fuente y color usando Google Fonts */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9fafb; /* Color de fondo más suave */
-    color: #2c3e59; /* Color de texto principal más oscuro */
-    line-height: 1.6; /* Mejorando la legibilidad con mayor interlineado */
+    background-color: #f9fafb;
+    color: #2c3e59;
+    line-height: 1.6;
 }
 
-main-title {
+ .main-title {
     font-family: 'Montserrat', sans-serif;
     color: #2980b9; /* Azul vibrante para el título principal */
     font-size: 3em; /* Tamaño de fuente más grande */
@@ -14,7 +13,7 @@ main-title {
     margin-top: 20px; /* Espacio superior para separar del borde */
 }
 
-subtitle {
+ .subtitle {
     font-family: 'Montserrat', sans-serif;
     color: #3498db; /* Color de subtítulo en azul claro */
     font-size: 2em;
@@ -22,19 +21,19 @@ subtitle {
     margin-bottom: 10px; /* Espacio inferior para separar del siguiente contenido */
 }
 
-intro-text {
+ .intro-text {
     font-size: 1.2em; /* Texto introductorio ligeramente más grande */
     color: #34495e; /* Color de texto más oscuro */
     text-align: center;
 }
 
-country-section {
+ .country-section {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 30px; /* Espacio superior para separación entre secciones */
 }
 
-country-image {
+ .country-image {
     width: 80%; /* Ajustando las imágenes para ser más responsivas */
     max-width: 500px; /* Limite de tamaño máximo para mantener la uniformidad */
     height: auto;
@@ -42,27 +41,28 @@ country-image {
     margin: 0 auto; /* Centrando las imágenes */
 }
 
-country-section h3 {
-    color: #e74c3c; /* Rojo vibrante para los nombres de los países */
-    font-size: 1.8em; /* Tamaño de fuente más grande para los títulos de los países */
-    margin-bottom: 5px; /* Espacio inferior para separar del texto */
+article h3 {
+    color: #e74c3c;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    
 }
 
-country-section p {
+article p {
     font-size: 1em;
-    color: #2c3e59; /* Corregido el color (era #2c5e59) */
+    color: #2c3e50;
     width: 80%;
     margin: 0 auto 20px auto; /* Centrando los párrafos y añadiendo margen inferior */
     text-align: justify; /* Justificar el texto para un aspecto más limpio */
 }
 
-a { /* Corregido el selector (era "o") */
+a { 
     color: #8e44ad; /* Color morado para los enlaces */
     text-decoration: none;
     font-weight: 700; /* Corregido el valor (era "70g") */
 }
 
-a:hover { /* Corregido el selector (era "o shower") */
+a:hover { 
     color: #9b59b6; /* Color más claro al pasar el mouse */
     text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
 }
@@ -74,7 +74,7 @@ country-table {
 }
 
 country-table th, country-table td {
-    border: 1px solid #dddddd; /* Añadido el símbolo # al color (era "dddd") */
+    border: 1px solid #ddd; 
     padding: 10px; /* Aumentar espacio entre el contenido de la celda */
     text-align: center;
 }

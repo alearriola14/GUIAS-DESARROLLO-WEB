@@ -4,8 +4,132 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Guia 1</title>
+	<title>Portafolio estudiantil</title>
 	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			color: #333;
+			background: #d0e3f1;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		.header {
+			background: linear-gradient(135deg, #6f8fe8 0%, #3e20d0 100%);
+			color: white;
+			text-align: center;
+			padding: 3rem 0;
+		}
+
+		.header h1 {
+			font-size: 2.5rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.header p {
+			font-size: 1.2rem;
+			opacity: 0.9;
+		}
+
+		.section {
+			background: white;
+			margin: 2rem auto;
+			padding: 2rem;
+			border-radius: 10px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			max-width: 800px;
+		}
+
+		.section h2 {
+			color: #0c098b;
+			margin-bottom: 1.5rem;
+			border-bottom: 3px solid #5958a7;
+			padding-bottom: 0.5rem;
+		}
+
+		.section h3 {
+			color: #2d3748;
+			margin: 1.5rem 0 1rem 0;
+		}
+
+		.personal-info {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+		}
+
+		.info-item {
+			background: #f7fafc;
+			padding: 1rem;
+			border-radius: 8px;
+			border-left: 4px solid #0c098b;
+		}
+
+		.info-item strong {
+			color: #2d3748;
+		}
+
+		.foda-grid {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1.5rem;
+			margin-top: 1rem;
+		}
+
+		.foda-item {
+			padding: 1.5rem;
+			border-radius: 8px;
+			background: #f7fafc;
+		}
+
+		.fortalezas {
+			border-left: 4px solid green;
+		}
+
+		.oportunidades {
+			border-left: 4px solid blue;
+		}
+
+		.debilidades {
+			border-left: 4px solid orange;
+		}
+
+		.amenazas {
+			border-left: 4px solid red;
+		}
+
+		.foda-item h4 {
+			margin-bottom: 0.5rem;
+			font-size: 1.1rem;
+		}
+
+		.fortalezas h4 {
+			color: #48bb78;
+		}
+
+		.oportunidades h4 {
+			color: #4299e1;
+		}
+
+		.debilidades h4 {
+			color: #ed8936;
+		}
+
+		.amenazas h4 {
+			color: #f56565;
+		}
+
 		nav ul {
 			list-style: none;
 			padding: 0;
@@ -32,39 +156,178 @@
 			transition: color 0.2s;
 			display: block;
 		}
+
+		nav ul li a:hover {
+			color: #667eea;
+		}
+
+		.guides-section h2 {
+			text-align: center;
+			margin-bottom: 1rem;
+			font-size: 2rem;
+			color: #0c098b;
+		}
+
+		/* responsive */
+		@media (max-width: 768px) {
+			.header h1 {
+				font-size: 2rem;
+			}
+
+			.header p {
+				font-size: 1rem;
+			}
+
+			.section {
+				margin: 1rem;
+				padding: 1.5rem;
+			}
+
+			.foda-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.container {
+				padding: 0 10px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.header {
+				padding: 2rem 0;
+			}
+
+			.header h1 {
+				font-size: 1.8rem;
+			}
+
+			.section {
+				padding: 1rem;
+			}
+		}
 	</style>
 </head>
 
 <body>
-	<h1 style="text-align:center; margin-top:2rem; font-size:2.2rem; color:#222;">Guia 1</h1>
-	<nav>
-		<ul>
-			<li><a href="20245416_guia1/estilos_embebidos.html">Ejemplo1</a></li>
-			<li><a href="20245416_guia1/ejemplo2.html">Ejemplo 2</a></li>
-			<li><a href="20245416_guia1/paises.html">Ejemplo 3</a></li>
-			<li><a href="20245416_guia1/programa_fav.html">Ejercicio 1</a></li>
-		</ul>
-	</nav>
+	<div class="header">
+		<div class="container">
+			<h1>Portafolio estudiantil</h1>
+			<p>Desarrollo web I - guías de ejercicios</p>
+		</div>
+	</div>
 
-	<h1 style="text-align:center; margin-top:2rem; font-size:2.2rem; color:#222;">Guia 2</h1>
-	<nav>
-		<ul>
-			<li><a href="20245416_guia2/pelicula.html">Ejemplo1</a></li>
-			<li><a href="20245416_guia2/tablero.html">Ejemplo 2</a></li>
-			<li><a href="20245416_guia2/biografia.html">Ejercicio 1</a></li>
-		</ul>
-	</nav>
+	<div class="container">
+		<section class="section">
+			<h2>Datos personales</h2>
+			<div class="personal-info">
+				<div class="info-item">
+					<strong>Nombre:</strong> Lorena Alejandra Arriola González
+				</div>
+				<div class="info-item">
+					<strong>Carnet:</strong> 20245416
+				</div>
+				<div class="info-item">
+					<strong>Biografía:</strong> Soy una estudiante de Ingeniería de Software de 20 años, apasionada por
+					encontrar soluciones innovadoras y por vivir la vida al máximo. Creo en el poder de la disciplina,
+					el trabajo en equipo y la curiosidad constante para forjar un futuro brillante.
+				</div>
+			</div>
+		</section>
 
-	<h1 style="text-align:center; margin-top:2rem; font-size:2.2rem; color:#222;">Guia 3</h1>
-	<nav>
-		<ul>
-			<li><a href="20245416_guia3/oscares.html">Ejemplo 1</a></li>
-			<li><a href="20245416_guia3/menu_horizontal.html">Ejemplo 2</a></li>
-			<li><a href="20245416_guia3/index.html">Ejemplo 3</a></li>
-			<li><a href="20245416_guia3/analisis.html">Ejercicio 1</a></li>
-			
-	</nav>
+		<section class="section">
+			<h2>Desarrollo web I</h2>
+			<h3>Descripción del curso</h3>
+			<p>Desarrollo web I es el curso fundamental que introduce los lenguajes esenciales para crear aplicaciones
+				web: HTML, CSS y JavaScript. Aprendemos a diseñar sitios web atractivos y funcionales,
+				crear aplicaciones interactivas de front-end y comprender la arquitectura de aplicaciones web modernas.
+			</p>
 
+			<h3>Contenidos principales</h3>
+			<ul style="margin-left: 2rem; margin-top: 1rem;">
+				<li><strong>Unidad I-II:</strong> Introducción al HTML y CSS</li>
+				<li><strong>Unidad III-IV:</strong> Maquetación de sitios web y frameworks responsivos</li>
+				<li><strong>Unidad V:</strong> Introducción a JavaScript</li>
+				<li><strong>Unidad VI:</strong> DOM y JavaScript asíncrono</li>
+			</ul>
+		</section>
+
+		<section class="section">
+			<h2> FODA</h2>
+			<div class="foda-grid">
+				<div class="foda-item fortalezas">
+					<h4>Fortalezas</h4>
+					<p>He mejorado significativamente en el manejo y clasificación de información. También he adquirido
+						nuevas herramientas y conocimientos sobre recursos útiles para el desarrollo de páginas web.</p>
+				</div>
+				<div class="foda-item oportunidades">
+					<h4>Oportunidades</h4>
+					<p>He aprendido la importancia del orden en la presentación del trabajo y la organización del
+						código, habilidades que serán valiosas en futuros proyectos profesionales.</p>
+				</div>
+				<div class="foda-item debilidades">
+					<h4>Debilidades</h4>
+					<p>Necesito seguir trabajando en la creatividad para desarrollar páginas web y darles un estilo más
+						innovador y atractivo.</p>
+				</div>
+				<div class="foda-item amenazas">
+					<h4>Amenazas</h4>
+					<p>El mayor obstáculo fue la curva de aprendizaje de HTML y CSS, siendo mi primera experiencia
+						creando páginas web estructuradas. Me hubiera gustado conocer estas herramientas antes, para
+						reducir las dificultades iniciales.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2>Guías de ejercicios</h2>
+
+			<div class="guides-section">
+				<h2>Guía 1</h2>
+				<nav>
+					<ul>
+						<li><a href="20245416_guia1/estilos_embebidos.html">Ejemplo 1</a></li>
+						<li><a href="20245416_guia1/ejemplo2.html">Ejemplo 2</a></li>
+						<li><a href="20245416_guia1/paises.html">Ejemplo 3</a></li>
+						<li><a href="20245416_guia1/programa_fav.html">Ejercicio 1</a></li>
+					</ul>
+				</nav>
+
+				<h2>Guía 2</h2>
+				<nav>
+					<ul>
+						<li><a href="20245416_guia2/pelicula.html">Ejemplo 1</a></li>
+						<li><a href="20245416_guia2/tablero.html">Ejemplo 2</a></li>
+						<li><a href="20245416_guia2/biografia.html">Ejercicio 1</a></li>
+					</ul>
+				</nav>
+
+				<h2>Guía 3</h2>
+				<nav>
+					<ul>
+						<li><a href="20245416_guia3/oscares.html">Ejemplo 1</a></li>
+						<li><a href="20245416_guia3/menu_horizontal.html">Ejemplo 2</a></li>
+						<li><a href="20245416_guia3/index.html">Ejemplo 3</a></li>
+						<li><a href="20245416_guia3/analisis.html">Ejercicio 1</a></li>
+					</ul>
+				</nav>
+
+				<h2>Guía 4</h2>
+				<nav>
+					<ul>
+						<li><a href="20245416_guia4/mediaqueries.html">Ejemplo 1</a></li>
+						<li><a href="20245416_guia4/index.html">Ejemplo 2</a></li>
+					</ul>
+				</nav>
+
+				<h2>Guía 5</h2>
+				<nav>
+					<ul>
+						<li><a href="20245416_guia5/index.html">Ejemplo 1</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+	</div>
 </body>
 
 </html>

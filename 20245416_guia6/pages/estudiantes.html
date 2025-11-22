@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../css/stylesFunciones.css" rel="stylesheet" />
+    <link rel="icon" href="../img/js.png" sizes="32x32" type="image/png" />
+    <title>Formulario de estudiantes</title>
+</head>
+
+<body>
+    <header>
+        <div class="px-3 py-2 text-bg-dark fixed-top">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="../indexFunciones.html"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                        <img src="../img/js.png" alt="" width="32" height="32" class="me-2" />
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small nav-bar">
+                        <li class="text-center">
+                            <a href="recursividad.html" class="nav-link text-white">
+                                <i class="bi bi-arrow-clockwise bi-2 d-block"></i>
+                                Recursividad
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="tabla.html" class="nav-link text-white">
+                                <i class="bi bi-table bi-2 d-block"></i>
+                                Creando una tabla
+                            </a>
+                        </li>
+                        <li class="text-center">
+                            <a href="formulario.html" class="nav-link text-white">
+                                <i class="bi bi-ui-checks bi-2 d-block"></i>
+                                Formulario
+                            </a>
+                        </li>
+                        <li class="text-center nav-bar-li-active">
+                            <a href="estudiantes.html" class="nav-link text-white">
+                                <i class="bi bi-mortarboard bi-2 d-block"></i>
+                                Estudiantes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-12 shadow-lg p-3 mt-5 bg-body rounded">
+                <h3>Registro de estudiantes</h3>
+                <p class="text-muted">validación de datos </p>
+                
+                <form id="idFormEstudiante">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idTxtCarnet" placeholder="Carnet del estudiante">
+                                <label for="idTxtCarnet">
+                                    <i class="bi bi-card-text"></i> Carnet (Formato: AB001)
+                                </label>
+                                <div class="invalid-feedback" id="errorCarnet"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idTxtNombreCompleto" placeholder="Nombre completo">
+                                <label for="idTxtNombreCompleto">
+                                    <i class="bi bi-person-fill"></i> Nombre completo
+                                </label>
+                                <div class="invalid-feedback" id="errorNombre"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idTxtDUI" placeholder="Número de DUI">
+                                <label for="idTxtDUI">
+                                    <i class="bi bi-card-heading"></i> DUI (Formato: ########-#)
+                                </label>
+                                <div class="invalid-feedback" id="errorDUI"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="idTxtNIT" placeholder="Número de NIT">
+                                <label for="idTxtNIT">
+                                    <i class="bi bi-file-earmark-text"></i> NIT (Formato: ####-######-###-#)
+                                </label>
+                                <div class="invalid-feedback" id="errorNIT"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="date" class="form-control" id="idTxtFechaNacimiento" placeholder="Fecha de nacimiento">
+                                <label for="idTxtFechaNacimiento">
+                                    <i class="bi bi-calendar-date"></i> Fecha de nacimiento
+                                </label>
+                                <div class="invalid-feedback" id="errorFecha"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="idTxtEmail" placeholder="Correo electrónico">
+                                <label for="idTxtEmail">
+                                    <i class="bi bi-envelope"></i> Correo electrónico
+                                </label>
+                                <div class="invalid-feedback" id="errorEmail"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-floating mb-3">
+                                <input type="number" class="form-control" id="idTxtEdad" placeholder="Edad" min="1" max="100">
+                                <label for="idTxtEdad">
+                                    <i class="bi bi-123"></i> Edad
+                                </label>
+                                <div class="invalid-feedback" id="errorEdad"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-12 pt-3">
+                            <button id="idBtnAgregarEstudiante" type="button" class="btn btn-success">
+                                <i class="bi bi-person-plus"></i> Guardar estudiante
+                            </button>
+                            <button id="idBtnMostrarEstudiantes" type="button" class="btn btn-warning">
+                                <i class="bi bi-people"></i> Mostrar estudiantes
+                            </button>
+                            <button id="idBtnLimpiarFormulario" type="button" class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Limpiar formulario
+                            </button>
+                            <button id="idBtnValidarTodo" type="button" class="btn btn-info">
+                                <i class="bi bi-check-circle"></i> Validar formulario
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tabla de Estudiantes -->
+        <div class="col-12 shadow-lg p-3 mt-5 bg-body rounded">
+            <h3><i class="bi bi-table"></i> Lista de estudiantes registrados</h3>
+            <div id="idTablaEstudiantes">
+                <div class="alert alert-info">
+                    <i class="bi bi-info-circle"></i> No hay estudiantes registrados
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--NOTIFICACIONES -->
+    <div class="toast-container top-0 start-50 translate-middle-x pt-4 mt-1" style="z-index: 1035;">
+        <div id="idNotificacionEstudiante" class="toast text-bg-success" role="alert" aria-atomic="true">
+            <div class="toast-header">
+                <i class="bi bi-bell"></i>
+                <strong class="me-auto">Notificacion</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="close"></button>
+            </div>
+            <div class="toast-body" id="idMensajeEstudiante">
+            </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/estudiantes.js" defer></script>
+</body>
+
+</html>
